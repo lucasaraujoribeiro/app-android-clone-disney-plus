@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelecionarUsuarioActivity">
+
+
+    <TextView
+        android:id="@+id/lblQuemEstaAssistindo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Quem está assistindo?"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView01"
+        android:layout_width="93dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="36dp"
+        android:clipChildren="true"
+        app:cardCornerRadius="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/cardView02"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblQuemEstaAssistindo">
+
+        <ImageView
+            android:id="@+id/imageView01"
+            app:srcCompat="@drawable/naruto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/lblUser01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Naruto"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/cardView01"
+        app:layout_constraintStart_toStartOf="@+id/cardView01"
+        app:layout_constraintTop_toBottomOf="@+id/cardView01" />
+
+    <TextView
+        android:id="@+id/textView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sakura"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/cardView03"
+        app:layout_constraintStart_toStartOf="@+id/cardView03"
+        app:layout_constraintTop_toBottomOf="@+id/cardView03" />
+
+    <TextView
+        android:id="@+id/textView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sasuke"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/cardView04"
+        app:layout_constraintStart_toStartOf="@+id/cardView04"
+        app:layout_constraintTop_toBottomOf="@+id/cardView04" />
+
+    <TextView
+        android:id="@+id/textView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="Orochimaru"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/cardView05"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/cardView05" />
+
+    <TextView
+        android:id="@+id/textView06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="Tsunade"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/cardView06"
+        app:layout_constraintStart_toStartOf="@+id/cardView06"
+        app:layout_constraintTop_toBottomOf="@+id/cardView06" />
+
+    <TextView
+        android:id="@+id/textView07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jiraya"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/cardView07"
+        app:layout_constraintStart_toStartOf="@+id/cardView07"
+        app:layout_constraintTop_toBottomOf="@+id/cardView07" />
+
+    <TextView
+        android:id="@+id/textView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kakashi"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/cardView02"
+        app:layout_constraintStart_toStartOf="@+id/cardView02"
+        app:layout_constraintTop_toBottomOf="@+id/cardView02" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView03"
+        android:layout_width="93dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="40dp"
+        android:clipChildren="true"
+        app:cardCornerRadius="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/cardView04"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblUser01">
+        <ImageView
+            android:id="@+id/imageView03"
+            app:srcCompat="@drawable/sakura"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView04"
+        android:layout_width="93dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="41dp"
+        android:clipChildren="true"
+        app:cardCornerRadius="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cardView03"
+        app:layout_constraintTop_toBottomOf="@+id/textView02">
+        <ImageView
+            android:id="@+id/imageView04"
+            app:srcCompat="@drawable/sasuke"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="75dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView06"
+        android:layout_width="93dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="48dp"
+        android:clipChildren="true"
+        app:cardCornerRadius="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cardView05"
+        app:layout_constraintTop_toBottomOf="@+id/textView04">
+        <ImageView
+            android:id="@+id/imageView06"
+            app:srcCompat="@drawable/tsunade"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView07"
+        android:layout_width="93dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="476dp"
+        android:clipChildren="true"
+        app:cardCornerRadius="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblQuemEstaAssistindo">
+
+        <ImageView
+            android:id="@+id/imageView07"
+            app:srcCompat="@drawable/jiraya"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvEditarPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="24dp"
+        android:text="Editar perfis"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView02"
+        android:layout_width="93dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="36dp"
+        android:clipChildren="true"
+        app:cardCornerRadius="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cardView01"
+        app:layout_constraintTop_toBottomOf="@+id/lblQuemEstaAssistindo">
+        <ImageView
+            android:id="@+id/imageView02"
+            app:srcCompat="@drawable/kakashi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Quem está assistindo?"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="411dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView05"
+        android:layout_width="93dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="48dp"
+        android:clipChildren="true"
+        app:cardCornerRadius="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/cardView06"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView03">
+
+        <ImageView
+            android:id="@+id/imageView05"
+            app:srcCompat="@drawable/orochimaru"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
