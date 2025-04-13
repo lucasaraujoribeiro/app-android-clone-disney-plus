@@ -2,7 +2,7 @@
 **Aluno:** <br/>
 Lucas Araujo Ribeiro <br/>
 
-## Trabalho pratico 01
+## Trabalho prático 01
 Use os recursos aprendidos até o momento e crie uma aplicação seguindo essa referência ao lado(app Disney plus).
 - 1 uma tela de perfil de login
 - 1 tela Principal (sem rolagem)
